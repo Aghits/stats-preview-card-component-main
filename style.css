@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 120px 40px 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+}
+
+h1 {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+}
+
+#text {
+    margin: 5px;
+}
+
+img {
+    width: 50%; /* 87 */
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-size:cover;
+    background-blend-mode: multiply;
+}
+
+@media screen and (max-width: 969px ) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    img {
+        width: 33em;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0px;
+    }
+    .card {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
